@@ -1,4 +1,8 @@
+import { useContext, useState} from "react"; 
+import { AppContext } from "../App";
+
 export function Contact() {
-    return <h2>Contact</h2>;
+    const {userName: contextName} = useContext(AppContext);
+    return <h2>{contextName}</h2>;
     
 }
